@@ -1,0 +1,251 @@
+@charset "UTF-8";
+
+/*----------Fonts----------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: 'Recent Grotesk';
+    src: url(../fonts/fonnts.com-Recent_Grotesk_Ultra.otf) format(opentype);
+}
+
+/*----------Global----------*/
+
+:root {
+    --corh00: hsl(12, 79%, 30%);
+    --corh01: #E54B25;
+    --corh02: #EC5B24;
+    --corh03: #F16527;
+    --corh04: #F78733;
+    --corh05: #cfcfcf;
+    --corh06: #F78733dd;
+    --corc00: hsl(203, 100%, 20%);
+    --corc01: #0070B8;
+    --corc02: #0A7ABF;
+    --corc03: #0F8DBF;
+    --corc04: #2AA9E0;
+    --corc05: #46B8F4;
+    --corc06: #46B8F4cc;
+    --font01: 'Recent Grotesk';
+    --font02: 'nunito';
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    min-height: 100vh;
+    font-family: var(--font02), Arial, Helvetica, sans-serif;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+abbr {
+    text-decoration: none;
+}
+
+/*----------header (todos)----------*/
+
+header #cabecalho {
+    background-color: var(--corh03);
+    box-shadow: 0 0 10px #00000050;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid var(--corh01);
+}
+header #cabecalho img {
+    height: 80px;
+}
+header nav {
+    background-color: var(--corh05);
+    box-shadow: 0 0 10px #00000050;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    border-bottom: 1px solid rgb(180, 180, 180);
+}
+header nav li {
+    text-shadow: 0 0 2px #00000060;
+    display: inline-block;
+    margin: 8px;
+    font-weight: 700;
+    font-size: 1.3em;
+    font-family: var(--font02);
+}
+
+/*----------Main----------*/
+
+main {
+    min-height: 80vh;
+    font-family: var(--font02);
+    line-height: 1.5em;
+    font-weight: 600;
+}
+main article {
+    padding: 10px;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+main a {
+    font-weight: 700;
+}
+main a:hover {
+    text-decoration: underline;
+}
+main h1 {
+    text-align: center;
+    font-family: var(--font01);
+    font-size: 3em;
+    padding-bottom: 20px;
+}
+main h2 {
+    padding: 20px 0;
+    font-weight: 900;
+}
+main p {
+    padding: 10px 0;
+    text-indent: 15px;
+    text-align: justify;
+}
+main ul {
+    padding-left: 20px;
+}
+main li {
+    padding: 5px 0;
+    text-align: justify;
+}
+
+/*Início*/
+
+main #creditos {
+    margin-top: -10px;
+}
+main #creditos p{
+    padding: 0;
+    padding-top: -10px;
+    text-align: right;
+    font-size: 0.8em;
+}
+
+/*Aulas*/
+
+main .conteudo01 {
+    background-color: var(--corc06);
+    border: 1px solid #a0a0a0;
+}
+main .conteudo01 p {
+    padding: 0 20px 10px 20px;
+    font-size: 1.1em;
+}
+main .conteudo01 a{
+    color: var(--corc00);
+}
+
+main #m1, #m3, #m5 {
+    background-color: var(--corh06);
+}
+main #m2, #m4{
+    background-color: var(--corc06);
+}
+
+main #m1, #m2, #m3, #m4, #m5{
+    margin-top: 70px;
+    border: 1px solid #a0a0a0;
+    max-height: 17px;
+}
+main #m1 h2, #m2 h2, #m3 h2, #m4 h2, #m5 h2{
+    transform: translate(25px, -27px);
+    font-family: var(--font01);
+}
+main #m1, .video, #m2, .video, #m3, .video, #m4, .video, #m5, .video {
+    padding-bottom: 56.3%;
+    position: relative;
+    transform: translatey(-35px);
+}
+main #m1 iframe, #m2 iframe, #m3 iframe, #m4 iframe, #m5 iframe {
+    position: absolute;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    box-shadow: 0 0 6px 2px #00000050;
+}
+
+main .capitulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+main .capitulos a:hover {
+    text-decoration: none;
+}
+
+main .m1c, .m3c, .m5c {
+    background-color: var(--corh06);
+    background-image: url(../img/html05.png);
+    background-size: 130px;
+    background-repeat: no-repeat;
+    background-position: 81px -25px;
+}
+main .m2c, .m4c {
+    background-color: var(--corc06);
+    background-image: url(../img/css05.png);
+    background-size: 130px;
+    background-repeat: no-repeat;
+    background-position: 81px -25px;
+}
+
+main .m1c, .m2c, .m3c, .m4c, .m5c {
+    margin: 2px;
+    padding: 5px;
+    margin-top: 15px;
+    height: 65px;
+    width: 140px;
+    border: 1px solid #a0a0a0;
+    border-radius: 0 10px;
+    font-size: 0.8em;
+    line-height: 1.2em;
+}
+main .m1c:hover, .m2c:hover, .m3c:hover, .m4c:hover, .m5c:hover{
+    box-shadow: 0 0 3px 3px #00000030;
+    transition-duration: 1s;
+    font-size: .81em;
+}
+main .m1c h3, .m2c h3, .m3c h3, .m4c h3, .m5c h3 {
+    text-transform: uppercase;
+    font-weight: 900;
+    padding-bottom: 4px;
+}
+main .m1c p, .m2c p, .m3c p, .m4c p, .m5c p{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    text-indent: 0;
+    font-weight: 700;
+}
+
+/*Tags*/
+
+main #tags h2 {
+    font-size: 2.2em;
+}
+
+/*----------Footer (Todos)----------*/
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    font-size: 10px;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
